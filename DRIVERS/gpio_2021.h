@@ -56,6 +56,20 @@
 #define GPIO_PIN5    (0x0020)
 #define GPIO_PIN6    (0x0040)
 #define GPIO_PIN7    (0x0080)
+//Ejercicio 9
+#define PUERTO1         1
+#define PUERTO2         2
+#define LEDROJO         0x01
+#define LEDRGBROJO      0x01
+#define LEDRGBVERDE     0x02
+#define LEDRGBAZUL      0x04
+#define BOTON1          0x02
+#define BOTON2          0x10
+#define ENTRADA3        0x08
+#define ENTRADA4        0x10
+#define ENTRADA5        0x20
+#define ENTRADA6        0x40
+#define ENTRADA7        0x80
 
 
 /************************************************
@@ -71,4 +85,5 @@ extern void GPIO_setPinBajo(uint_fast8_t selectedPort,                   uint_fa
 extern uint8_t GPIO_getPinValor(uint_fast8_t selectedPort,                 uint_fast16_t selectedPins);
 extern uint8_t Gpio_Pin_in_P1( uint_fast16_t pin_);
 extern uint8_t Gpio_Pin_in_P2( uint_fast16_t pin_);
+extern void GPIO_init2024(void);
 #endif  /* gpio_2021.h*/

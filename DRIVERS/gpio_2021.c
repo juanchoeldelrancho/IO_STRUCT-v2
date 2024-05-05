@@ -42,6 +42,22 @@ static const uint32_t GPIO_PORT_TO_BASE[] =
 };
                                                 // <-- E9
 /*****************************************************************************
+ * Function: GPIO_init2024
+ * Preconditions: N/A.
+ * Overview: INICIALIZACION DE ALGUNOS PINES
+ * Input: N/A.
+ * Output: N/A
+ *****************************************************************************/
+void GPIO_init2024(void)
+{
+    GPIO_setPinEntradaconPullUp(PUERTO1,BOTON2);                 //PIN P1.4 COMO ENTRADA
+    GPIO_setPinEntradaconPullUp(PUERTO1,BOTON1);                 //PIN P1.1 COMO ENTRADA
+    GPIO_setPinSalida(PUERTO2, LEDRGBROJO | LEDRGBVERDE |LEDRGBAZUL);   // CONFIGURA PINES 2.0,2.1,2.2  COMO SALIDA (LEDS RGB)
+    GPIO_setPinBajo(PUERTO2, LEDRGBROJO | LEDRGBVERDE |LEDRGBAZUL);      // APAGADOS
+    GPIO_setPinSalida(PUERTO1, LEDROJO);   // CONFIGURA PINES 1.0  COMO SALIDA (LED Rjo)
+    GPIO_setPinBajo(PUERTO1, LEDROJO);      // APAGADO
+}
+/*****************************************************************************
  * Function: GPIO_PIN_IN
  * Preconditions: PUERTO1 SELECCIONADO.
  * Overview: LEE EL PIN DESEADO

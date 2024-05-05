@@ -26,17 +26,7 @@
 
 /* Definición de botones con su respectivo puerto. */
 
-#define LEDROJO         0x01
-#define LEDRGBROJO      0x01
-#define LEDRGBVERDE     0x02
-#define LEDRGBAZUL      0x04
-#define BOTON1          0x02
-#define BOTON2          0x10
-#define ENTRADA3        0x08
-#define ENTRADA4        0x10
-#define ENTRADA5        0x20
-#define ENTRADA6        0x40
-#define ENTRADA7        0x80
+
 
 
 /* Definición de led's plasmados en tarjeta con su respectivo puerto. */
